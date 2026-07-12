@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Local environment files
+.env.local
+.env.*.local
+apps/*/.env.local
+apps/*/.env.*.local
+!.env.example
+
+# Local deployment state
+.vercel/
+supabase/.temp/
+
+# Build and tool output
+*.tsbuildinfo
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
