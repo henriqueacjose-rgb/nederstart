@@ -6,9 +6,6 @@ const nextConfig = {
   output: process.env.NEXT_OUTPUT_MODE,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../'),
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -53,3 +50,6 @@ if (fs.existsSync(userConfigPath)) {
 }
 
 module.exports = nextConfig;
+
+
+
