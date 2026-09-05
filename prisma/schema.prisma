@@ -3,8 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 // ─── NextAuth ───────────────────────────────────────────────────────
@@ -47,7 +48,7 @@ model Account {
   access_token      String?
   expires_at        Int?
   token_type        String?
-  scope              String?
+  scope             String?
   id_token          String?
   session_state     String?
 
